@@ -1,0 +1,18 @@
+{
+  "name": "exercise-kaleidoscope",
+  "version": "1.0.0",
+  "description": "React TypeScript Electron test assessment",
+  "license": "MIT",
+  "author": {
+    "name": "Ahmad Mukhtar",
+    "email": "ahmedmukhtar1133@gmail.com",
+    "url": "https://github.com/ahmedmukhtar1133"
+  },
+  "main": "./dist/main/main.js",
+  "scripts": {
+    "rebuild": "node -r ts-node/register ../../.amg/scripts/electron-rebuild.js",
+    "postinstall": "npm run rebuild && npm run link-modules",
+    "link-modules": "node -r ts-node/register ../../.amg/scripts/link-modules.ts"
+  },
+  "dependencies": {}
+}
